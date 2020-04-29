@@ -15,7 +15,7 @@ class App extends React.Component {
                 <Header />
                 <Switch>
                     <Route path="/" exact component={Homepage} />
-                    <Route path="/About-us" exact component={Aboutus}/>
+                    <Route path="/about-us" exact component={Aboutus}/>
                     <Route path="/tur" exact component={Turler} />
                     <Route path="/tur/:yazilanTur" exact component={FilteredDogs} />
                     <Route path="/detay/:id/:name" exact component={DetailDogs} />

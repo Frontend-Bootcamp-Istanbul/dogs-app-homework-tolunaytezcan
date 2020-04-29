@@ -1,7 +1,8 @@
 import React from "react";
 import dogs from "../dogsdata";
 import { Link } from "react-router-dom";
-import { ListGroup, ListGroupItem } from "reactstrap";
+import { ListGroup, ListGroupItem,Breadcrumb, BreadcrumbItem } from "reactstrap";
+
 
 const FilteredDogs = (props) => {
     const secilenTur = props.match.params.yazilanTur;
@@ -9,7 +10,17 @@ const FilteredDogs = (props) => {
     const turismi = dogs.find((dog) => dog.breedSlug === secilenTur);
     return (
         <div>
-            <h5>Selected breeds: {turismi.breed}</h5>
+            <Breadcrumb>
+        <BreadcrumbItem>
+          <Link to={`/tur`}>
+            <b>All Breeds</b>
+          </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem >
+        <b>{turismi.breed}</b>
+        </BreadcrumbItem>
+      </Breadcrumb>
+            
             <ListGroup>
                 <ListGroupItem>
                     {filteredDogs.map((dog) => {

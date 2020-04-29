@@ -6,9 +6,16 @@ export default function Aboutus() {
         width:"1000px",
         height:"500px",
         display: "inline-block",
-    }}>
-        <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46651586/1/?bust=1574413291&width=600" alt="Dogs"></img>
-        <p>
+    }}> 
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46650419/1/?bust=1574396035&width=600" alt="Dogs"></img>
+                    </td>
+                    <td>
+                        <br/>
+                    <p>
       Dogs were probably the first tame animals. They have accompanied humans
       for at least 20,000 years and possibly as many as 40,000. Scientists
       generally agree that all dogs, domestic and wild, share a common wolf
@@ -36,6 +43,12 @@ export default function Aboutus() {
       the blind—a poignant symbol of the dog's longstanding role as man's best
       friend.
       </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+      
     </div>
   );
 }

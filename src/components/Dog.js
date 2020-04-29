@@ -20,7 +20,7 @@ const Dog = ({
         }}
       >
         <Link to={`/detay/${id}/${name}`}>
-          <h5>{name}</h5>
+          <h6>{name}</h6>
         </Link>
       </span>
       <FavoriteActions toggle={toggle} id={id} getStatus={getStatus} />

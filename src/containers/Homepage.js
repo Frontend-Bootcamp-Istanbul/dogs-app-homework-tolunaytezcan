@@ -78,7 +78,7 @@ class Homepage extends React.Component {
         }
         return (
             <div>
-                <div style={{marginLeft:"20px"}}>
+                <div style={{ marginLeft: "20px" }}>
                     <Link to={`/tur`}><b><h5>All Breeds </h5></b> </Link>
                 </div>
                 {
