@@ -16,7 +16,7 @@ const DetailDogs = ({ match }) => {
             <b>{secilen.breed}</b>
           </Link>
         </BreadcrumbItem>
-        <BreadcrumbItem>
+        <BreadcrumbItem >
           <b>{secilen.name}</b>
         </BreadcrumbItem>
       </Breadcrumb>
@@ -33,7 +33,7 @@ const DetailDogs = ({ match }) => {
               <img src={secilen.image} alt="dog"></img>
             </td>
             <td>
-              <Card style={{ height: "400px", fontWeight: "bold" }}>
+              <Card style={{ height: "400px", fontWeight: "bold", }}>
                 <CardBody>
                   <CardTitle>
                     Dog Name: {secilen.name}
@@ -58,6 +58,8 @@ const DetailDogs = ({ match }) => {
           </tr>
         </tbody>
       </table>
+      <hr/>
+            <Link to={`/`}><h6>Return Homepage</h6></Link>
     </div>
   );
 };

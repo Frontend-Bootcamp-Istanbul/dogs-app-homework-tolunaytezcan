@@ -1,9 +1,10 @@
 import React from 'react';
 import dogs from "../dogsdata";
-import { Button } from "reactstrap";
-import FavoriteActions from "../components/FavoriteActions";
+//import { Button } from "reactstrap";
+//import FavoriteActions from "../components/FavoriteActions";
 import Dog from "../components/Dog";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const apiHost = "https://5ea5687c2d86f00016b45bbd.mockapi.io";
 
@@ -77,13 +78,15 @@ class Homepage extends React.Component {
         }
         return (
             <div>
-                    <h6>All Breeds</h6>
-                    {
-                        dogs.map((dog) => {
-                            return <Dog toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
-                        })
-                    }
-                
+                <div style={{marginLeft:"20px"}}>
+                    <Link to={`/tur`}><b><h5>All Breeds </h5></b> </Link>
+                </div>
+                {
+                    dogs.map((dog) => {
+                        return <Dog toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
+                    })
+                }
+
             </div>
         );
     }
