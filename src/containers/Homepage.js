@@ -5,6 +5,7 @@ import dogs from "../dogsdata";
 import Dog from "../components/Dog";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem } from "reactstrap";
 
 const apiHost = "https://5ea5687c2d86f00016b45bbd.mockapi.io";
 
@@ -78,9 +79,13 @@ class Homepage extends React.Component {
         }
         return (
             <div>
-                <div style={{ marginLeft: "20px" }}>
-                    <Link to={`/tur`}><b><h5>All Breeds </h5></b> </Link>
-                </div>
+                  <Breadcrumb>
+                <BreadcrumbItem >
+                <Link to={`/tur`}>
+                        <b>All Breeds</b>
+                    </Link>
+                </BreadcrumbItem >
+            </Breadcrumb>
                 {
                     dogs.map((dog) => {
                         return <Dog loadingFavorites={this.state.loadingFavorites} toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />

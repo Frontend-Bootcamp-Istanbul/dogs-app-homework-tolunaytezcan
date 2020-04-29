@@ -10,6 +10,11 @@ export default function Turler() {
             display: "inline-block",
         }}>
             <Breadcrumb>
+            <BreadcrumbItem>
+          <Link to={`/`}>
+            <b>Homepage</b>
+          </Link>
+        </BreadcrumbItem>
                 <BreadcrumbItem >
                     <b>All Breeds</b>
                 </BreadcrumbItem >
