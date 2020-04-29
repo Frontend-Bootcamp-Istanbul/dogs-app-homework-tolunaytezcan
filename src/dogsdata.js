@@ -27,6 +27,7 @@ const dogs = [{
             "age": "Young",
             "published_at": "2019-11-18T20:58:40+0000",
             "breed": "Beagle",
+            "breedSlug": "others",
             "id": "62812"
         },
 
@@ -70,6 +71,7 @@ const dogs = [{
             "age": "Young",
             "published_at": "2019-11-21T17:13:33+0000",
             "breed": "Great Pyrenees",
+            "breedSlug": "others",
             "id": "53462"
         },
 
@@ -80,6 +82,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-22T04:35:52+0000",
             "breed": "Shepherd",
+            "breedSlug": "shepherd",
             "id": "54968"
         },
 
@@ -90,6 +93,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-21T19:48:12+0000",
             "breed": "Australian Shepherd",
+            "breedSlug": "shepherd",
             "id": "40534"
         },
 
@@ -111,7 +115,7 @@ const dogs = [{
             "age": "Young",
             "published_at": "2019-11-18T22:44:03+0000",
             "breed": "Chihuahua",
-            "breedSlug": "Chihuahua",
+            "breedSlug": "chihuahua",
             "id": "80881"
         },
 
@@ -133,6 +137,7 @@ const dogs = [{
             "age": "Senior",
             "published_at": "2019-11-22T05:34:42+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "16737"
         },
 
@@ -154,6 +159,7 @@ const dogs = [{
             "age": "Young",
             "published_at": "2019-11-21T19:00:36+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "45057"
         },
 
@@ -164,6 +170,7 @@ const dogs = [{
             "age": "Baby",
             "published_at": "2019-11-22T09:57:16+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "55972"
         },
 
@@ -174,6 +181,7 @@ const dogs = [{
             "age": "Baby",
             "published_at": "2019-11-21T13:27:05+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "76008"
         },
 
@@ -195,6 +203,7 @@ const dogs = [{
             "age": "Baby",
             "published_at": "2019-11-21T15:46:52+0000",
             "breed": "Shepherd",
+            "breedSlug": "shepherd",
             "id": "61902"
         },
 
@@ -205,6 +214,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-21T16:46:48+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "50536"
         },
 
@@ -226,6 +236,7 @@ const dogs = [{
             "age": "Senior",
             "published_at": "2019-11-21T13:45:05+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "42473"
         },
 
@@ -247,6 +258,7 @@ const dogs = [{
             "age": "Young",
             "published_at": "2019-11-21T22:48:53+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "41505"
         },
 
@@ -312,6 +324,7 @@ const dogs = [{
             "age": "Senior",
             "published_at": "2019-11-21T13:45:28+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "98438"
         },
 
@@ -322,6 +335,7 @@ const dogs = [{
             "age": "Senior",
             "published_at": "2019-11-22T07:30:31+0000",
             "breed": "Mixed Breed",
+            "breedSlug": "others",
             "id": "41736"
         },
 
@@ -332,6 +346,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-21T21:48:41+0000",
             "breed": "Great Pyrenees",
+            "breedSlug": "others",
             "id": "11020"
         },
 
@@ -342,6 +357,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-22T01:30:43+0000",
             "breed": "Miniature Poodle",
+            "breedSlug": "others",
             "id": "14015"
         },
 
@@ -352,6 +368,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-22T08:51:27+0000",
             "breed": "Cavalier King Charles Spaniel",
+            "breedSlug": "cavalier-king-charles-spaniel",
             "id": "99238"
         },
 
@@ -362,6 +379,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-19T18:08:40+0000",
             "breed": "Cavalier King Charles Spaniel",
+            "breedSlug": "cavalier-king-charles-spaniel",
             "id": "75247"
         },
 
@@ -372,6 +390,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-22T03:34:05+0000",
             "breed": "Cavalier King Charles Spaniel",
+            "breedSlug": "cavalier-king-charles-spaniel",
             "id": "92364"
         },
 
@@ -382,6 +401,7 @@ const dogs = [{
             "age": "Adult",
             "published_at": "2019-11-21T19:47:48+0000",
             "breed": "Golden Retriever",
+            "breedSlug": "golden-retriever",
             "id": "10182"
         }
     ];
