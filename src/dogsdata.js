@@ -76,7 +76,7 @@ const dogs = [{
         },
 
         {
-            "name": "rex",
+            "name": "Rex",
             "description": "Oh boy! It sure is nice to meet you. My name is Rex . I&#039;m a happy go lucky, fun-loving...",
             "image": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46650419/1/?bust=1574396035&width=600",
             "age": "Adult",
@@ -208,7 +208,7 @@ const dogs = [{
         },
 
         {
-            "name": "CLIFFORD",
+            "name": "Clifford",
             "description": "Clifford came to our shelter as a stray and no one came to claim him. He is a mellow guy...",
             "image": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46643165/1/?bust=1574355427&width=600",
             "age": "Adult",
@@ -219,7 +219,7 @@ const dogs = [{
         },
 
         {
-            "name": "High Stakes IN FOSTER",
+            "name": "High Stakes in foster",
             "description": "High Stakes came to us from a breeder where he was not able to be homed by no fault of...",
             "image": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46611461/1/?bust=1574096841&width=600",
             "age": "Baby",
@@ -351,7 +351,7 @@ const dogs = [{
         },
 
         {
-            "name": "J-Paddington (11lbs)",
+            "name": "J-Paddington",
             "description": "To apply to adopt, please go to www.adoptgoodkarma.com/adopting and fill out the online application. You will be contacted by his...",
             "image": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46649392/1/?bust=1574386158&width=600",
             "age": "Adult",
@@ -395,7 +395,7 @@ const dogs = [{
         },
 
         {
-            "name": "MAPLE",
+            "name": "Maple",
             "description": null,
             "image": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/46645406/1/?bust=1574366274&width=600",
             "age": "Adult",
