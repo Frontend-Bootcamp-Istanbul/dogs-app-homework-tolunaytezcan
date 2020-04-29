@@ -83,7 +83,7 @@ class Homepage extends React.Component {
                 </div>
                 {
                     dogs.map((dog) => {
-                        return <Dog toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
+                        return <Dog loadingFavorites={this.state.loadingFavorites} toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
                     })
                 }
 
