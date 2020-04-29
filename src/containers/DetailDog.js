@@ -25,7 +25,7 @@ const DetailDogs = ({ match }) => {
           <tr>
             <td
               style={{
-                maxHeight: "400px",
+                height: "200px",
                 width: "400px",
                 border: "3px solid #73AD21",
               }}

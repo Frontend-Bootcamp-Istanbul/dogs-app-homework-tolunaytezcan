@@ -15,7 +15,8 @@ class Homepage extends React.Component {
 
         this.state = {
             favorites: [],
-            loadingFavorites: false
+            loadingFavorites: false,
+            loadingID:null
         }
     }
     componentDidMount() {
@@ -42,11 +43,15 @@ class Homepage extends React.Component {
     }
 
     toggle = (dogId) => {
+
+        this.setState({loadingID:dogId})
         const foundDog = this.state.favorites.find((favorite) => favorite.dogId === dogId);
         if (foundDog) {
             axios.delete(`${apiHost}/favorites/${foundDog.id}`).then((result) => {
                 this.setState(({
-                    favorites: this.state.favorites.filter((dog) => dog.dogId !== dogId)
+                    favorites: this.state.favorites.filter((dog) => dog.dogId !== dogId),
+                    loadingID:null
+                    //null almazsan hep kilitli kalıyor
                 }))
             }).catch((err) => {
                 console.log(err);
@@ -58,7 +63,9 @@ class Homepage extends React.Component {
             }).then((result) => {
                 const eklenenFavori = result.data; // {id: 1, dogId: benim yolladigim dog id, createdat: date}
                 this.setState({
-                    favorites: [...this.state.favorites, eklenenFavori]
+                    favorites: [...this.state.favorites, eklenenFavori],
+                    loadingID:null
+                      //null almazsan hep kilitli kalıyor
                 })
             }).catch((err) => {
                 console.log(err);
@@ -88,7 +95,7 @@ class Homepage extends React.Component {
             </Breadcrumb>
                 {
                     dogs.map((dog) => {
-                        return <Dog loadingFavorites={this.state.loadingFavorites} toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
+                        return <Dog loadingID={this.state.loadingID} toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
                     })
                 }
 

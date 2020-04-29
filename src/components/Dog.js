@@ -9,7 +9,7 @@ const Dog = ({
   name,
   toggle,
   getStatus,
-  loadingFavorites
+  loadingID
 }) => {
   return (
     <ListGroup>
@@ -24,7 +24,7 @@ const Dog = ({
           <h6>{name}</h6>
         </Link>
       </span>
-      <FavoriteActions loadingFavorites={loadingFavorites} toggle={toggle} id={id} getStatus={getStatus} />
+      <FavoriteActions loadingID={loadingID} toggle={toggle} id={id} getStatus={getStatus} />
       </ListGroupItem>
     </ListGroup>
   );
