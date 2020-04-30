@@ -9,7 +9,7 @@ const FilteredDogs = (props) => {
     const filteredDogs = dogs.filter((dog) => dog.breedSlug === secilenTur);
     const turismi = dogs.find((dog) => dog.breedSlug === secilenTur);
     return (
-        <div>
+        <div >
             <Breadcrumb>
         <BreadcrumbItem>
           <Link to={`/tur`}>
@@ -21,13 +21,13 @@ const FilteredDogs = (props) => {
         </BreadcrumbItem>
       </Breadcrumb>
             
-            <ListGroup>
+            <ListGroup >
                 <ListGroupItem>
                     {filteredDogs.map((dog) => {
                         return (
                             <ListGroupItem>
                                 <Link to={`/detay/${dog.id}/${dog.name}`}>
-                                    <h5>{dog.name}</h5>
+                                    <h6>{dog.name}</h6>
                                 </Link>
                                 </ListGroupItem>
                         );

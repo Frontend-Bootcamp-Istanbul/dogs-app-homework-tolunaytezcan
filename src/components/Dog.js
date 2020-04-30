@@ -12,18 +12,15 @@ const Dog = ({
   loadingID
 }) => {
   return (
-    <ListGroup>
+    <ListGroup style={{
+      display: "inline-block",
+      float:"left",
+      width:"200px",
+    }}>
     <ListGroupItem>
-      <span
-        style={{
-          display: "inline-block",
-          marginRight: "15px",
-        }}
-      >
         <Link to={`/detay/${id}/${name}`}>
           <h6>{name}</h6>
         </Link>
-      </span>
       <FavoriteActions loadingID={loadingID} toggle={toggle} id={id} getStatus={getStatus} />
       </ListGroupItem>
     </ListGroup>

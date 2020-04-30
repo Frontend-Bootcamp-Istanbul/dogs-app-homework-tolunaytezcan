@@ -98,6 +98,7 @@ class Homepage extends React.Component {
                         return <Dog loadingID={this.state.loadingID} toggle={this.toggle} id={dog.id} getStatus={this.getStatus} {...dog} />
                     })
                 }
+                
 
             </div>
         );

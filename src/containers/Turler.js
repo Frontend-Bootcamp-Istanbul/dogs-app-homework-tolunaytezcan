@@ -20,30 +20,30 @@ export default function Turler() {
                 </BreadcrumbItem >
             </Breadcrumb>
 
-            <ListGroup>
+            <ListGroup >
                 <ListGroupItem>
                     <Link to={`/tur/cavalier-king-charles-spaniel`}>
-                        <h5>Cavalier King Charles Spaniel</h5>
+                        <h6>Cavalier King Charles Spaniel</h6>
                     </Link>
                 </ListGroupItem>
                 <ListGroupItem>
                     <Link to={`/tur/golden-retriever`}>
-                        <h5>Golden Retriever</h5>
+                        <h6>Golden Retriever</h6>
                     </Link>
                 </ListGroupItem>
                 <ListGroupItem>
                     <Link to={`/tur/chihuahua`}>
-                        <h5>Chihuahua</h5>
+                        <h6>Chihuahua</h6>
                     </Link>
                 </ListGroupItem>
                 <ListGroupItem>
                     <Link to={`/tur/shepherd`}>
-                        <h5>Shepherd</h5>
+                        <h6>Shepherd</h6>
                     </Link>
                 </ListGroupItem>
                 <ListGroupItem>
                     <Link to={`/tur/others`}>
-                        <h5>Others</h5>
+                        <h6>Others</h6>
                     </Link>
                 </ListGroupItem>
             </ListGroup>
