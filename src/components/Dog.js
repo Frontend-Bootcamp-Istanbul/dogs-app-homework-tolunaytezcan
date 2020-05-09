@@ -7,9 +7,6 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 const Dog = ({
   id,
   name,
-  toggle,
-  getStatus,
-  loadingID
 }) => {
   return (
     <ListGroup style={{
@@ -21,7 +18,7 @@ const Dog = ({
         <Link to={`/detay/${id}/${name}`}>
           <h6>{name}</h6>
         </Link>
-      <FavoriteActions loadingID={loadingID} toggle={toggle} id={id} getStatus={getStatus} />
+      <FavoriteActions id={id}/>
       </ListGroupItem>
     </ListGroup>
   );
