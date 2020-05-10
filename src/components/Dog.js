@@ -1,18 +1,27 @@
-import React from 'react';
+import React from "react";
 import FavoriteActions from "./FavoriteActions";
+//import { Router,Route } from 'react-router';
+import { Link } from "react-router-dom";
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
-const Dog = ({id, name, toggle, getStatus}) => {
-    return <li key={id} style={{
-        margin: "15px"
+const Dog = ({
+  id,
+  name,
+}) => {
+  return (
+    <ListGroup style={{
+      display: "inline-block",
+      float:"left",
+      width:"200px",
     }}>
-                            <span style={{
-                                display: "inline-block",
-                                marginRight: "15px"
-                            }}>
-                                {name}
-                            </span>
-        <FavoriteActions toggle={toggle} id={id} getStatus={getStatus}/>
-    </li>
+    <ListGroupItem>
+        <Link to={`/detay/${id}/${name}`}>
+          <h6>{name}</h6>
+        </Link>
+      <FavoriteActions id={id}/>
+      </ListGroupItem>
+    </ListGroup>
+  );
 };
 
 export default Dog;
